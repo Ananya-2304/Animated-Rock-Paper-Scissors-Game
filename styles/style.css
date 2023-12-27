@@ -1,0 +1,48 @@
+body{
+    background-color: #FFEA00;
+}
+.Results{
+    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(2,100px);
+}
+.resultText{
+    text-align: center;
+}
+.score{
+    text-align: center;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+}
+
+@keyframes count-in{
+    0%{
+        transform: translateY(0);
+    }
+    55%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.count-in{
+    animation:.7s count-in 3
+}
+.selections{
+    display:flex;
+    justify-content: center;
+}
+.rock,.paper,.scissors{
+    background:none;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    transition: 100ms;
+}
+.rock:hover,.paper:hover,.scissors:hover{
+    transform:scale(1.1);
+}
+
